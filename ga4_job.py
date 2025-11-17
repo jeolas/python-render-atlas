@@ -1,3 +1,17 @@
+import os
+from datetime import datetime
+
+from google.analytics.data_v1beta import BetaAnalyticsDataClient
+from google.analytics.data_v1beta.types import (
+    DateRange,
+    Dimension,
+    Filter,
+    FilterExpression,
+    Metric,
+    RunReportRequest,
+)
+
+
 def carregar_ga4_para_mongo(db):
     # Credenciais GA4 vindas de variável de ambiente
     creds_json = os.environ["GA4_CREDS_JSON"]
