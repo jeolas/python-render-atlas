@@ -82,6 +82,6 @@ def carregar_ga4_para_mongo(db):
         print("GA4: nenhum dado retornado com os filtros informados.")
         return
 
-    colecao = db["ga4_eventos_utms"]
+    colecao = db["ga4_eventos_raw"]
     colecao.insert_many(linhas)
-    print(f"GA4: inseridas {len(linhas)} linhas em ga4_eventos_utms.")
+    print(f"GA4: inseridas {len(linhas)} linhas em ga4_eventos_raw.")
