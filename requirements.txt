@@ -2,3 +2,4 @@ pymongo
 google-analytics-data
 pandas
 reportlab
+requests
